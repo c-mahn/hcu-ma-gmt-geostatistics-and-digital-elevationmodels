@@ -7,12 +7,12 @@ gmt gmtset FORMAT_GEO_MAP ddd.x
 # --- execute GMT commands ---
 
 echo Map is created ...
-gmt basemap -JM10/17 -R9:20/10:40/54:10/55:10 -B+t"Baltic Sea" -Xc -Yc -Lx8.5c/-2c+c54+w100k+f+u -V
-gmt coast -Bxa0.5g0.5 -Bya0.5g0.5 -Df -W1p,120/120/120 -S153/204/255 -G204/255/153 -Ia/2p,blue -N1/1p,255/0/0,dashed -V
+gmt basemap -JM7.5/17 -R9:20/10:40/54:10/55:10 -B+t"Baltic Sea" -Xc -Yc -Vw
+gmt coast -Bxa1g1 -Bxa1g1 -Bya0.5g0.5 -Df -W1p,120/120/120 -S160/250/250 -G160/220/160 -Ia/2p,0/0/255 -N1/1p,255/127/0 -Vw
 
 echo Points, Labels, Lines are inserted:
-gmt plot ./data/track.xy -W1p,red -V
-gmt plot ./data/Baltic_Sea-cities.txt -Sc7p -Gwhite -W1p,black -V
-gmt text ./data/Baltic_Sea-cities.txt -F+f+a+j -Dj3p/4p -V
+gmt plot ./data/track.xy -W1p,red -Vw
+gmt plot ./data/Baltic_Sea-cities.txt -Sc7p -Gwhite -W1p,black -Vw
+gmt text ./data/Baltic_Sea-cities.txt -F+f+a+j -Dj3p/4p -Vw
 
 gmt end
