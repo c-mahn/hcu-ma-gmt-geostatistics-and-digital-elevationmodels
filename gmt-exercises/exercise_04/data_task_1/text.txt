@@ -1,4 +1,6 @@
 Elevation data from www.gebco.net (GEBCO 2022)
 The location of ships is purely fictional
 The rivers and country borders are part of the Generic Mapping Tool (GMT)
-This map was made by Christopher Mahn, 01.06.2023
+Projection: Mercator projection
+Reference system: WGS-84
+This map was made by Christopher Mahn, 20.06.2023
