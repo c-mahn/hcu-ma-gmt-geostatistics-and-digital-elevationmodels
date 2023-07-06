@@ -1,8 +1,8 @@
 # Main-Script
 # #############################################################################
 
-# This python script can be used to generate a trajectory with constrains from
-# a floorplan or similar geometry.
+# This python script is the main script for the third exercise of the lecture.
+# It contains the Kriging interpolation for the given points and the new point N
 
 # Author:
 # Christopher Mahn
@@ -18,7 +18,6 @@ import matplotlib.pyplot as plt
 # -----------------------------------------------------------------------------
 # Settings and Parameters
 
-verbose = True  # Shows more debugging information
 matrikelnumber = "0000080"  # Your matrikelnumber
 
 points = {"1": {"easting": 3.0, "northing": 4.0, "elevation": 120.0},  # Given points
